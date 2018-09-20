@@ -25,5 +25,5 @@ sudo rm -rf /etc/nginx/sites-enabled
 sudo rm -rf /etc/nginx/sites-available
 
 # set up nginx reverse proxy
-sudo ln -s /home/ubuntu/environment/nodeapp.conf /etc/nginx/conf.d/nodeapp.conf
+sudo ln -s /home/ubuntu/environment/app/nodeapp.conf /etc/nginx/conf.d/nodeapp.conf
 sudo nginx -s reload
