@@ -19,17 +19,34 @@
     }
 
     img {
-      width:150px;
+      width:100px;
+    }
+
+    #command {
+      width:50%;
+      display: inline-block; 
+    }
+
+    #stdout {
+      width:50%;
+      display: inline-block; 
     }
   </style>
 </head>
 <body>
   <div class="vertical-center">
-    <h1>Hey you working?</h1>
 
-
-    <p>Welcome to the Sparta Test App</p>
     <img src="/images/logo.png" />
+    <h1>Hackable: Code Injection</h1>
+
+    <p>The following command was run on the server!</p>
+    <code id="command">
+      <%= command %>
+    </code>
+    <p>This was the result</p>
+    <code id="stdout">
+      <%= stdout %>
+    </code>
   </div>
 </body>
 </html>

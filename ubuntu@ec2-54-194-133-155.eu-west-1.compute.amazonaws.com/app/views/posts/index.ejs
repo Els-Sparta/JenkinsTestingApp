@@ -5,31 +5,35 @@
   <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
   <style type="text/css">
     body {
-      text-align:center;
       font-family: 'Slabo 27px', serif;
       height:100vh;
     }
 
-    .vertical-center {
-
-      position:relative;
-      top:50%;
-      transform: translateY(-50%);
-
+    img {
+      width:100px;
     }
 
-    img {
-      width:150px;
+    .blog {
+      padding:50px;
+    }
+
+    .post {
+      padding:20px;
     }
   </style>
 </head>
 <body>
-  <div class="vertical-center">
-    <h1>Hey you working?</h1>
-
-
-    <p>Welcome to the Sparta Test App</p>
+  <div class="blog">
     <img src="/images/logo.png" />
+    <h1>Recent Posts</h1>
+    <hr/>
+
+    <% posts.forEach(function(post){ %>
+    <div class="post">
+      <h3><%= post.title %></h3>
+      <p><%= post.body %></p>
+    </div>
+    <% }) %>
   </div>
 </body>
 </html>
