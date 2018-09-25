@@ -1,0 +1,26 @@
+DEPENDENCIES
+  mongo
+    git: git@github.com:Els-Sparta/Mongo-cookbook.git
+    revision: 5c145b794ac3002fd8f99095eca65c1a20bfe184
+  node
+    git: git@github.com:Els-Sparta/Node-cookbook.git
+    revision: 6c1fabb9791286d7fc025530b512859bbf156435
+
+GRAPH
+  ark (4.0.0)
+    build-essential (>= 0.0.0)
+    seven_zip (>= 0.0.0)
+  build-essential (8.2.1)
+    mingw (>= 1.1)
+    seven_zip (>= 0.0.0)
+  mingw (2.1.0)
+    seven_zip (>= 0.0.0)
+  mongo (0.1.0)
+  node (0.1.0)
+    nodejs (~> 5.0.0)
+  nodejs (5.0.0)
+    ark (>= 2.0.2)
+    build-essential (>= 0.0.0)
+  seven_zip (3.0.0)
+    windows (>= 0.0.0)
+  windows (5.1.1)
